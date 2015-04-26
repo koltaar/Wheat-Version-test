@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+
+<TITLE>Exporting into Excel</TITLE>
+
+</HEAD>
+
+<SCRIPT Language = "VBScript">
+
+Function Export(P,R)
+
+Set ExcelApp = CreateObject("Excel.application")
+ExcelApp.Visible = True
+
+strPathDoc = "C:\Users\admin\Documents\Mines\Genius\Wheat\Wheat Version test\essai.xls"
+
+Set myExcelDoc = ExcelApp.Workbooks.Open(strPathDoc)
+ExcelApp.Visible = True
+myExcelDoc.Windows(1).Visible = True
+set XlSheet = myExcelDoc.Worksheets(2)
+currentRow = 6
+currentVal = XlSheet.Range("A" & currentRow).value
+While currentVal <> ""
+    currentRow = currentRow + 1
+    currentVal = XlSheet.Range("A" & currentRow).value
+Wend
+XlSheet.Range("A" & currentRow).value = P
+XlSheet.Range("A" & (currentRow + 1)).value = R
+myExcelDoc.save
+myExcelDoc.close
+Set myExcelDoc = Nothing
+Set ExcelApp = Nothing
+End Function
+
+Sub cmdExp_OnClick()
+Dim lPrincipal
+Dim dblRate
+
+Frstnm = Disnm.value
+Lstnm = TreatGrp.value
+cInterest = Export(Frstnm, Lstnm)
+
+End Sub
+
+</SCRIPT> <BODY>
+
+First Name: <INPUT Type="Text" Name="Disnm" Value="">
+
+Last Name : <INPUT Type="Text" Name="TreatGrp" Value="">
+<INPUT Type="Button"
+Name="cmdExp" Value="Connect"> </BODY> </HTML>

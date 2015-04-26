@@ -101,13 +101,18 @@ p{
 p input{
 	color: #000;
 }
-
+p select{
+	color: #000;
+}
 p input[type="submit"]{
 	color :#ffba00;
 	background: #016006;
 	border: none;
 	font-size: 24px;
 	padding: 5px;
+}
+#send{
+	margin-top: 10px;
 }
 p input[type="submit"]:hover, p input[type="submit"]:focus, p input[type="submit"]:active, p input[type="submit"].active, .open > .dropdown-toggle.btn-primary {
     background: #028308;
@@ -117,4 +122,8 @@ p input[type="submit"]:hover, p input[type="submit"]:focus, p input[type="submit
 p input[type="submit"]:active, p input[type="submit"].active {
     background: #028308;
     box-shadow: none;
+}
+
+ul{
+	list-style: none;
 }

@@ -47,5 +47,66 @@
 					</div>
 				</div>
 			</div>
+			<div class="formulaire">
+				<div class="row">
+					<form method="post" action="traitement.php" class="text-center">
+						<div class="col-xs-12 col-md-6">
+	   						<p>
+	   							<label for="Nom">Nom</label> : <br />
+	   							<input type="text" name="Nom" id="Nom" required />
+	   						</p>
+	   						<p>
+	   							<label for="Adresse">Adresse</label> : <br />
+	   							<input type="text" name="Adresse" id="Adresse" required />
+	   						</p>
+	   						<p>
+	   							<label for="Mail">E-Mail</label> : <br />
+	   							<input type="email" name="Mail" id="Mail" required />
+	   						</p>
+	   						<p>
+	   							<label for="Tel">Numéro de téléphone</label> : <br />
+	   							<input type="tel" name="Tel" id="Tel" required />
+	   						</p>
+	   					</div>
+	   					<div class="col-xs-12 col-md-6">
+	   						<p>
+								<label for="jour">Quel jour ?</label><br />
+								<select name="jour" id="jour">
+									<option value="Lundi">Lundi</option>
+									<option value="Mardi">Mardi</option>
+									<option value="Mercredi">Mercredi</option>
+									<option value="Jeudi">Jeudi</option>
+									<option value="Vendredi">Vendredi</option>
+									<option value="Samedi">Samedi</option>
+									<option value="Dimanche">Dimanche</option>
+								</select>
+	   						</p>
+	   						<p>
+	   							<label for="jour">A quelle heure ?</label><br />
+								<select name="Heure" id="Heure">
+									<option value="10h-12h">10h-12h</option>
+									<option value="12h-14h">12h-14h</option>
+									<option value="14h-16h">14h-16h</option>
+									<option value="16h-18h">16h-18h</option>
+									<option value="18h-20h">18h-20h</option>
+									<option value="20h-21h">20h-21h</option>
+								</select>
+	   						</p>
+	   						<p>
+	   							<label for="jour">Moyen de payement</label><br />
+								<select name="Moyen de payement" id="Moyen de payement">
+									<option value="Lydia">Lydia</option>
+									<option value="Especes">Especes</option>
+								</select>
+							</p>
+							<p>
+   								<input type="submit" id="send" value="Envoyer" />
+   							</p>
+
+	   					</div>
+
+					</form>
+				</div>
+			</div>
 		</div>
 </body>
