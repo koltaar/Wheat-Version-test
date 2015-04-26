@@ -1,0 +1,120 @@
+
+html, body{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 100%;
+   background:#ffba00; 
+}
+.banner{
+	background:url(../images/banner.jpg) no-repeat;
+	background-size:100% 100%;
+	min-height:700px;
+}
+
+#logo-right img{
+	height: 100px;
+	padding: 5px;
+	float: right;
+}
+
+@media (max-width: 991px){
+	#logo-right img{
+		float: none;
+	 	display: block;
+   		margin-left: auto;
+  		margin-right: auto;
+  		margin-top: 10px;
+  	}
+	#logo-left img{
+		float: none;
+	 	display: block;
+   		margin-left: auto;
+  		margin-right: auto;
+  	}
+}
+
+.bouton a{
+  display: block;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #028308;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+}
+
+.bouton a:hover{
+	color: #ffba00;
+	background: #028308;
+}
+.header{
+	padding: 20px;
+}
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #016006;
+    color: #ffba00;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #028308;
+    color: #ffba00;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #028308;
+    box-shadow: none;
+}
+
+.banner-bottom{
+	padding: 20%;
+	padding-top: 10%;
+	padding-bottom: 0%;
+}
+
+.banner{
+	width: 100%;
+}
+
+p{
+	color: #ffba00;
+}
+
+p input{
+	color: #000;
+}
+
+p input[type="submit"]{
+	color :#ffba00;
+	background: #016006;
+	border: none;
+	font-size: 24px;
+	padding: 5px;
+}
+p input[type="submit"]:hover, p input[type="submit"]:focus, p input[type="submit"]:active, p input[type="submit"].active, .open > .dropdown-toggle.btn-primary {
+    background: #028308;
+    color: #ffba00;
+}
+ 
+p input[type="submit"]:active, p input[type="submit"].active {
+    background: #028308;
+    box-shadow: none;
+}

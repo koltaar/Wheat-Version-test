@@ -1,0 +1,95 @@
+body{
+	color:rgb(20,20,20);
+	background-color: rgb(245,245,245);
+	font-family: 'Open Sans', sans-serif;	
+}
+
+h1{
+	font-family: 'Indie Flower', cursive;
+	color: orange;
+	font-size: 50px;
+
+}
+
+#header{
+	padding: 150px;
+	background-image: url(BackgroundHeader.jpg);
+	background-size: cover;
+	color: rgb(230,230,230);
+	text-shadow : 1px 1px 5px rgb(20, 20, 20);
+}
+
+
+.navbar{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	/*background-color: rgba(20, 20, 20, 0.5);*/
+	padding: 50px;
+	z-index: 200;
+	transition: padding 0.3s linear;
+}
+
+
+.navbar.nav-inscroll{
+	padding: 20px;
+	background-color: rgba(20,20,20, 0.5);
+}
+
+
+a{
+	color: lightgrey;
+	padding: 5px;
+	border-radius: 15%;
+	background-color: rgba(40, 40, 40, 0.8);
+	transition: all 0.3s linear;
+}
+a:hover{
+	color:white;
+	background-color: rgb(60,60,60);
+	text-decoration: none;
+	transition: all 0.3s linear;
+}
+
+
+.texte{
+	padding: 50px;
+}
+
+.img-center{
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.paragraphe{
+	padding-top: 70px;
+}
+
+h2{
+	font-family: 'Poiret One', cursive;
+}
+.navbar #top-btn{
+	/*visibility: hidden;*/
+	height: 0%;
+	transition: all 0.3s linear;
+	color: rgba(235,235,235,0);
+	background-color: rgba(40, 40, 40, 0);
+}
+
+.navbar.nav-inscroll #top-btn{
+	/*visibility: visible;*/
+	height: 100%;
+	transition: all 0.3s linear;
+	color: lightgrey;
+	background-color: rgba(40, 40, 40, 0.8);
+}
+
+.navbar.nav-inscroll #top-btn:hover{
+	/*visibility: visible;*/
+	height: 100%;
+	transition: all 0.3s linear;
+	color: white;
+	background-color: rgb(60, 60, 60,);
+}
